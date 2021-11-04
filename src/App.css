@@ -7,4 +7,55 @@
 
   background: rgb(0, 0, 0);
   color: white;
+
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  background: black;
+
+  width: 100%;
+}
+
+button {
+  font-size: 50px;
+  margin: 0 20px;
+
+  height: fit-content;
+
+  color: white;
+  background: none;
+  border: none;
+}
+
+.page-transition-enter {
+  opacity: 0;
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.page-transition-exit {
+  opacity: 1;
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+@media (min-width: 600px) {
+  button:hover svg {
+    color: #52ff70;
+    cursor: pointer;
+  }
 }
