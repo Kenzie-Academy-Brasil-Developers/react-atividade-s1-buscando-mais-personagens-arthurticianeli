@@ -1,0 +1,85 @@
+.alive {
+  -webkit-box-shadow: inset 0px 0px 33px 11px #52ff70;
+  box-shadow: inset 0px 0px 33px 11px #52ff70;
+}
+
+.dead {
+  -webkit-box-shadow: inset 0px 0px 33px 11px #ff4f4f;
+  box-shadow: inset 0px 0px 33px 11px #ff4f4f;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 10px;
+
+  transition: background 0.8s, box-shadow 1s;
+
+  margin: 20px;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-size: 300px;
+  background-position: center;
+}
+
+.card:hover {
+  background-size: 400px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.card:hover .name {
+  opacity: 1;
+}
+
+.card:hover .specie {
+  opacity: 1;
+}
+.card:hover .status {
+  opacity: 1;
+}
+
+.name {
+  color: #fff;
+  background-color: black;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+  white-space: nowrap;
+  max-width: 15ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  position: absolute;
+  top: 220px;
+  left: 15px;
+}
+
+.status {
+  opacity: 0;
+  transition: opacity 1s;
+
+  color: #fff;
+  background-color: black;
+
+  position: absolute;
+  top: 240px;
+  left: 15px;
+}
+
+.specie {
+  opacity: 0;
+  transition: opacity 1s;
+
+  color: #fff;
+  background-color: black;
+
+  position: absolute;
+  top: 260px;
+  left: 15px;
+}
